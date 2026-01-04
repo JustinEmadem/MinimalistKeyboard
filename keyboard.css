@@ -67,13 +67,12 @@ button {
   padding: 3px;
   cursor: pointer;
   border-radius: 18px;
-  top: 0;
   transition: top 0.05s ease, box-shadow 0.05s ease;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 button:active {
-  top: 3px;
+  transform: translateY(3px);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -202,7 +201,29 @@ span h5 {
     padding-left: 2px;
 }
 
+.numpad-keys {
+    position: relative;
+}
+
 .numpad-keys > div {
     display: flex;
     align-items: center;
+}
+
+.plus {
+    position: absolute;
+    right: 0;
+    top: 70px; 
+    height: 125px;
+}
+
+.zero {
+    width: 125.5px;
+}
+
+.num-enter {
+    position: absolute;
+    right: 0;
+    top: 210px; 
+    height: 125px;
 }
