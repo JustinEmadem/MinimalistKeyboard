@@ -85,14 +85,6 @@ button::before {
   z-index: -1;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  inset: -10px;
-  border-radius: 5px;
-  z-index: -1;
-}
-
 .tab {
     width: 90px;
 }
