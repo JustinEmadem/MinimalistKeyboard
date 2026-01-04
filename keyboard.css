@@ -5,10 +5,20 @@ button {
     border-radius: 13px;
     margin: 3px;
 }
-
+.backspace {
+    width: 100px;
+}
+.enter {
+    width: 130px;
+}
+.shift-left {
+    width: 140px;
+}
+.shift-right {
+    width: 120px;
+}
 .space {
     width: 300px;
-    
 }
 .brown {
     background-color: rgb(97, 76, 44);
