@@ -163,9 +163,35 @@ button[data-shift]::after {
     display: block;
 }
 
+.light-indicator-container{
+    background-color: rgb(223, 223, 221);
+    height: 64px;
+    margin: 0 0 4px 0;
+    padding: 8px;
+    border-radius: 9px;
+    box-shadow: 0 0 6px 4px rgb(183, 183, 183);
+}
+
 .light-indicator {
     background-color: black;
-    height: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+}
+
+span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: greenyellow;
+    border-radius: 6px;
+}
+
+span h5 {
+    margin-left: 15px;
+    padding-left: 2px;
 }
 
 .numpad-keys > div {
