@@ -21,8 +21,8 @@ body {
 button {
   position: relative;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   display: inline-flex;
   text-align: center;
   justify-content: center;
@@ -43,20 +43,37 @@ button::before {
   z-index: -1;
 }
 
-.backspace {
-    width: 100px;
+.tab {
+    width: 90px;
 }
+
+.backspace {
+    width: 126px;
+}
+
+.backslash {
+    width: 91px;
+}
+
+.capslock {
+    width: 110px;
+}
+
 .enter {
-    width: 130px;
+    width: 142px;
 }
 .shift-left {
-    width: 140px;
+    width: 145px;
 }
 .shift-right {
-    width: 120px;
+    width: 106.5px;
+}
+
+.btn-cwa {
+    width: 70px;
 }
 .space {
-    width: 300px;
+    width: 436px;
 }
 .brown {
     background-color: rgb(97, 76, 44);
