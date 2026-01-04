@@ -66,7 +66,7 @@ button {
   margin: 7px;
   padding: 3px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 18px;
   top: 0;
   transition: top 0.05s ease, box-shadow 0.05s ease;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
@@ -145,8 +145,18 @@ button[data-shift]::after {
     border-radius: 5px;
     z-index: -1;
 }
+
 .green {
     background-color: rgb(38, 68, 38);
+}
+
+.green::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    background-color: rgb(14, 52, 21);
+    border-radius: 5px;
+    z-index: -1;
 }
 
 .numpad-container {
