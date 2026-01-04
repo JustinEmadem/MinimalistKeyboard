@@ -56,15 +56,15 @@ body {
 button {
   position: relative;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 14px;
   font-family: inherit;
   font-weight: bold;
   color: gray;
-  margin: 6px 6px;
-  padding: 2px;
+  margin: 7px;
+  padding: 3px;
   cursor: pointer;
   border-radius: 10px;
   top: 0;
@@ -80,38 +80,38 @@ button:active {
 button::before {
   content: "";
   position: absolute;
-  inset: -5px;
+  inset: -6px;
   background: rgba(182, 185, 178, 0.5);
   border-radius: 5px;
   z-index: -1;
 }
 
 .tab {
-    width: 66px;
+    width: 90px;
 }
 
 .backspace {
-    width: 92px;
+    width: 125.5px;
 }
 
 .backslash {
-    width: 65.5px;
+    width: 89px;
 }
 
 .capslock {
-    width: 80px;
+    width: 110px;
 }
 
 .enter {
-    width: 104px;
+    width: 138px;
 }
 
 .shift-left {
-    width: 106px;
+    width: 144px;
 }
 
 .shift-right {
-    width: 78px;
+    width: 104px;
 }
 
 button.shift-active {
@@ -129,10 +129,10 @@ button[data-shift]::after {
 }
 
 .btn-cwa {
-    width: 52px;
+    width: 74px;
 }
 .space {
-    width: 315.5px;
+    width: 412px;
 }
 .brown {
     background-color: rgb(77, 59, 31);
