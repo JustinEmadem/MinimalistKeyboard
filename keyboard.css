@@ -39,10 +39,12 @@ button {
   width: 55px;
   height: 55px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-family: inherit;
   font-weight: bold;
+  color: gray;
   margin: 8px 6px;
+  padding: 2px;
   cursor: pointer;
   border-radius: 12px; 
 }
@@ -92,5 +94,5 @@ button::before {
     background-color: rgb(97, 76, 44);
 }
 .green {
-    background-color: rgb(12, 61, 12);
+    background-color: rgb(38, 68, 38);
 }
