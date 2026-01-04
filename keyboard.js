@@ -3,8 +3,24 @@ let capslockActive = false; // Move this to top with other states
 
 const shiftButtons = document.querySelectorAll('.shift-left, .shift-right');
 const dualCharButtons = document.querySelectorAll('[data-normal][data-shift]');
+const buttons = document.querySelectorAll('.keyboard-backpanel button');
 const capslockBtn = document.querySelector('.capslock');
 const capsLight = document.getElementById('caps-light');
+const display = document.getElementById('display');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const value = button.textContent.trim();
+
+        if (value === 'Del') {
+            display.value = display.value.slice(0, -1);
+        } else if (value === 'Esc') {
+            display.value = '';
+        } else {
+            display.value += value + ' ';
+        }
+    });
+});
 
 // Toggle shift state
 shiftButtons.forEach(btn => {
