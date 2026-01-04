@@ -25,8 +25,12 @@ body {
 .keyboard-backpanel {
   position: relative;
   border-radius: 10px;
-  padding: 20px;
+  padding: 12px;
   border: 2px solid rgb(183, 183, 183);
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: flex-start;
 }
 
 .keyboard-backpanel::before {
@@ -38,29 +42,36 @@ body {
     z-index: -1;
 }
 
-.keyboard-backpanel > section div {
+.keyboard-backpanel > section > div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.keyboard-backpanel > section:first-child {
+  flex: 1;
+}
+
+.keyboard-backpanel > section:last-child {
+  flex: 0 0 auto;
 }
 
 button {
   position: relative;
   border: none;
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 10px;
   font-family: inherit;
   font-weight: bold;
   color: gray;
-  margin: 8px 6px;
+  margin: 6px 6px;
   padding: 2px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 10px;
   top: 0;
   transition: top 0.05s ease, box-shadow 0.05s ease;
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 button:active {
@@ -71,38 +82,38 @@ button:active {
 button::before {
   content: "";
   position: absolute;
-  inset: -7px;
+  inset: -5px;
   background: rgba(182, 185, 178, 0.5);
-  border-radius: 6px;
+  border-radius: 5px;
   z-index: -1;
 }
 
 .tab {
-    width: 90px;
+    width: 66px;
 }
 
 .backspace {
-    width: 126px;
+    width: 92px;
 }
 
 .backslash {
-    width: 91px;
+    width: 65.5px;
 }
 
 .capslock {
-    width: 110px;
+    width: 80px;
 }
 
 .enter {
-    width: 142px;
+    width: 104px;
 }
 
 .shift-left {
-    width: 145px;
+    width: 106px;
 }
 
 .shift-right {
-    width: 106.5px;
+    width: 78px;
 }
 
 button.shift-active {
@@ -120,10 +131,10 @@ button[data-shift]::after {
 }
 
 .btn-cwa {
-    width: 70px;
+    width: 52px;
 }
 .space {
-    width: 436px;
+    width: 315.5px;
 }
 .brown {
     background-color: rgb(77, 59, 31);
@@ -131,9 +142,9 @@ button[data-shift]::after {
 .brown::before {
     content: "";
     position: absolute;
-    inset: -7px;
+    inset: -5px;
     background-color: rgb(68, 56, 36);
-    border-radius: 6px;
+    border-radius: 5px;
     z-index: -1;
 }
 .green {
