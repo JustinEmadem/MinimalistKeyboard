@@ -14,7 +14,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
+    width: 100%;
     max-width: 1200px; 
 }
 
@@ -24,16 +24,18 @@ body {
   border: 3px solid rgb(183, 183, 183);
 }
 
+.keyboard-backpanel > section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 button {
   position: relative;
   border: none;
   width: 55px;
   height: 55px;
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   font-weight: bold;
   margin: 8px 6px;
