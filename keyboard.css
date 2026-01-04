@@ -1,7 +1,21 @@
+body {
+    position: relative;
+    height: 100vh;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.keyboard-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    max-width: 1200px; 
 }
 
 button {
