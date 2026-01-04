@@ -128,6 +128,14 @@ button[data-shift]::after {
 .brown {
     background-color: rgb(77, 59, 31);
 }
+.brown::before {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    background-color: rgb(68, 56, 36);
+    border-radius: 6px;
+    z-index: -1;
+}
 .green {
     background-color: rgb(38, 68, 38);
 }
