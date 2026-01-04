@@ -22,9 +22,19 @@ body {
 }
 
 .keyboard-backpanel {
+  position: relative;
   border-radius: 10px;
   padding: 20px;
-  border: 3px solid rgb(183, 183, 183);
+  border: 2px solid rgb(183, 183, 183);
+}
+
+.keyboard-backpanel::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    background: rgba(222, 222, 222, 0.5);
+    border-radius: 15px;
+    z-index: -1;
 }
 
 .keyboard-backpanel > section div {
@@ -91,7 +101,7 @@ button::before {
     width: 436px;
 }
 .brown {
-    background-color: rgb(97, 76, 44);
+    background-color: rgb(77, 59, 31);
 }
 .green {
     background-color: rgb(38, 68, 38);
