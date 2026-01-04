@@ -4,6 +4,7 @@ body {
     font-family: "Wallpoet", sans-serif;
     font-weight: 200;
     font-style: normal;
+    color: gray;
 }
 
 * {
@@ -95,11 +96,27 @@ button::before {
 .enter {
     width: 142px;
 }
+
 .shift-left {
     width: 145px;
 }
+
 .shift-right {
     width: 106.5px;
+}
+
+button.shift-active {
+  background-color: #092411;
+  color: inherit;
+}
+
+button[data-shift]::after {
+  content: attr(data-shift);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  opacity: 0.7;
 }
 
 .btn-cwa {

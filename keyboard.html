@@ -33,17 +33,17 @@
                     <button class="green">Del</button>
                 </div>
                 <div class="num-keys">
-                    <button>`</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>0</button>
+                    <button data-normal="`" data-shift="~">`</button>
+                    <button data-normal="1" data-shift="!">1</button>
+                    <button data-normal="2" data-shift="@">2</button>
+                    <button data-normal="3" data-shift="#">3</button>
+                    <button data-normal="4" data-shift="$">4</button>
+                    <button data-normal="5" data-shift="%">5</button>
+                    <button data-normal="6" data-shift="^">6</button>
+                    <button data-normal="7" data-shift="&">7</button>
+                    <button data-normal="8" data-shift="*">8</button>
+                    <button data-normal="9" data-shift="(">9</button>
+                    <button data-normal="0" data-shift=")">0</button>
                     <button>-</button>
                     <button>=</button>
                     <button class="backspace brown">Backspace</button>
@@ -79,11 +79,11 @@
                     <button>L</button>
                     <button>;</button>
                     <button>'</button>
-                    <button class="enter">Enter</button>
+                    <button class="enter green">Enter</button>
                     <button class="green">Home</button>
                 </div>
                 <div class="third-row">
-                    <button class="shift-left green">Shift</button>
+                    <button class="shift-left green" id="shift-btn">Shift</button>
                     <button>Z</button>
                     <button>X</button>
                     <button>C</button>
@@ -94,7 +94,7 @@
                     <button>,</button>
                     <button>.</button>
                     <button>/</button>
-                    <button class="shift-right">Shift</button>
+                    <button class="shift-right green" id="shift-btn">Shift</button>
                     <button class="brown">arp</button>
                     <button class="green">End</button>
                 </div>
@@ -113,5 +113,7 @@
             </section>
         </div>
     </div>
+
+    <script src="/keyboard.js"></script>
 </body>
 </html>
