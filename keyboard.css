@@ -18,8 +18,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 1200px; 
 }
 
 .keyboard-backpanel {
@@ -28,9 +26,9 @@ body {
   padding: 12px;
   border: 2px solid rgb(183, 183, 183);
   display: flex;
-  justify-content: space-between;
-  gap: 5px;
+  gap: 14px;
   align-items: flex-start;
+  width: fit-content;
 }
 
 .keyboard-backpanel::before {
@@ -42,13 +40,13 @@ body {
     z-index: -1;
 }
 
-.keyboard-backpanel > section > div {
-  display: flex;
-  align-items: center;
+.keyboard-backpanel > section:first-child > div {
+    display: flex;
+    align-items: center;
 }
 
 .keyboard-backpanel > section:first-child {
-  flex: 1;
+   flex: 0 0 auto;
 }
 
 .keyboard-backpanel > section:last-child {
@@ -149,4 +147,18 @@ button[data-shift]::after {
 }
 .green {
     background-color: rgb(38, 68, 38);
+}
+
+.numpad-container {
+    display: block;
+}
+
+.light-indicator {
+    background-color: black;
+    height: 50px;
+}
+
+.numpad-keys > div {
+    display: flex;
+    align-items: center;
 }
