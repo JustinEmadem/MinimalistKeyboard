@@ -1,10 +1,27 @@
-button { 
-    background-color: rgb(236, 233, 229);
-    width: 50px;
-    height: 50px;
-    border-radius: 13px;
-    margin: 3px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 7px;
+  background-color: rgb(236, 233, 229);
+  border-radius: 10px;
+  border: none;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  background: rgba(236, 241, 230, 0.5);
+  z-index: -1;
+}
+
 .backspace {
     width: 100px;
 }
