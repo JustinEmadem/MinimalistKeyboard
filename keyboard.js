@@ -18,7 +18,6 @@ buttons.forEach(button => {
             if (action === 'backspace') {
                 display.value = display.value.slice(0, -1);
             }
-            
             return;
         }
         if (value === 'Esc') {
