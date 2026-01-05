@@ -1,5 +1,5 @@
 let shiftActive = false;
-let capslockActive = false; // Move this to top with other states
+let capslockActive = false;
 
 const shiftButtons = document.querySelectorAll('.shift-left, .shift-right');
 const dualCharButtons = document.querySelectorAll('[data-normal][data-shift]');

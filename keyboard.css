@@ -13,9 +13,27 @@ body {
     box-sizing: border-box;
 }
 
-.keyboard-container {
+.input-container {
+    position: relative;
+    height: 30vh;
+    margin: 20px;
+}
+
+input {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 1000px;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.keyboard-container {
+    position: absolute;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
