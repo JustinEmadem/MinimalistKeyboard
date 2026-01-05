@@ -71,6 +71,11 @@ input {
   flex: 0 0 auto;
 }
 
+.keyboard-backpanel button.active {
+    transform: scale(0.92);
+    background-color: #bbb;
+}
+
 button {
   position: relative;
   border: none;

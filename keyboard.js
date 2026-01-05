@@ -28,6 +28,56 @@ buttons.forEach(button => {
     });
 });
 
+document.addEventListener('keydown', (e) => {
+    if (e.repeat) return;
+    if (e.key === 'Shift') {
+        shiftButtons.forEach(btn => btn.click());
+        return;
+    }
+
+    if (e.key === 'CapsLock') {
+        capslockBtn.click();
+        return;
+    }
+
+    if (e.key === 'Backspace') {
+        const backspaceBtn = document.querySelector('[data-action="backspace"]');
+        if (backspaceBtn) backspaceBtn.click();
+        return;
+    }
+
+    if (e.key === 'Escape') {
+        const escBtn = [...buttons].find(b => b.textContent.trim() === 'Esc');
+        if (escBtn) escBtn.click();
+        return;
+    }
+
+    const key = e.key.length === 1 ? e.key : null;
+    if (!key) return;
+
+    const button = document.querySelector(
+        `[data-normal="${key.toLowerCase()}"], [data-shift="${key}"]`
+    );
+
+    if (button) {
+        button.classList.add('active');
+        button.click();
+    }
+});
+
+document.addEventListener('keyup', (e) => {
+    const key = e.key.length === 1 ? e.key : null;
+    if (!key) return;
+
+    const button = document.querySelector(
+        `[data-normal="${key.toLowerCase()}"], [data-shift="${key}"]`
+    );
+
+    if (button) {
+        button.classList.remove('active');
+    }
+});
+
 // Toggle shift state
 shiftButtons.forEach(btn => {
   btn.addEventListener('click', () => {
