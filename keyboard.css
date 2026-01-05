@@ -111,6 +111,10 @@ button::before {
     width: 125.5px;
 }
 
+.backspace svg {
+    pointer-events: none;
+}
+
 .backslash {
     width: 89px;
 }

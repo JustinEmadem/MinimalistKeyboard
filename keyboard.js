@@ -9,14 +9,16 @@ const capsLight = document.getElementById('caps-light');
 const display = document.getElementById('display');
 
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const value = button.textContent.trim();
+    button.addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        const value = btn.textContent.trim();
+        const action = btn.dataset.action;
 
-        if (value === 'Del') {
+        if (action === 'backspace') {
             display.value = display.value.slice(0, -1);
         } else if (value === 'Esc') {
             display.value = '';
-        } else {
+        } else if (value) {
             display.value += value + ' ';
         }
     });
