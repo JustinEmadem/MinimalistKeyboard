@@ -14,9 +14,14 @@ buttons.forEach(button => {
         const value = btn.textContent.trim();
         const action = btn.dataset.action;
 
-        if (action === 'backspace') {
-            display.value = display.value.slice(0, -1);
-        } else if (value === 'Esc') {
+        if (action) {
+            if (action === 'backspace') {
+                display.value = display.value.slice(0, -1);
+            }
+            
+            return;
+        }
+        if (value === 'Esc') {
             display.value = '';
         } else if (value) {
             display.value += value + ' ';
